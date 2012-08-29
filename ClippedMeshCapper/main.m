@@ -1,6 +1,6 @@
 //
 //  main.m
-//  GLTest4
+//  ClippedMeshCapper
 //
 //  Created by Huge Bonner on 12-08-29.
 //  Copyright (c) 2012 Huge Bonner Inc. All rights reserved.

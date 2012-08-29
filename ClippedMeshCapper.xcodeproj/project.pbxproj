@@ -24,16 +24,16 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		D307A0E215EEABBF00C04F84 /* GLTest4.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GLTest4.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D307A0E215EEABBF00C04F84 /* ClippedMeshCapper.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ClippedMeshCapper.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D307A0E615EEABBF00C04F84 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		D307A0E815EEABBF00C04F84 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		D307A0EA15EEABBF00C04F84 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		D307A0EC15EEABBF00C04F84 /* GLKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GLKit.framework; path = System/Library/Frameworks/GLKit.framework; sourceTree = SDKROOT; };
 		D307A0EE15EEABBF00C04F84 /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
-		D307A0F215EEABBF00C04F84 /* GLTest4-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "GLTest4-Info.plist"; sourceTree = "<group>"; };
+		D307A0F215EEABBF00C04F84 /* ClippedMeshCapper-Info.plist */ = {isa = PBXFileReference; path = "ClippedMeshCapper-Info.plist"; sourceTree = "<group>"; };
 		D307A0F415EEABBF00C04F84 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		D307A0F615EEABBF00C04F84 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		D307A0F815EEABBF00C04F84 /* GLTest4-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "GLTest4-Prefix.pch"; sourceTree = "<group>"; };
+		D307A0F815EEABBF00C04F84 /* ClippedMeshCapper-Prefix.pch */ = {isa = PBXFileReference; path = "ClippedMeshCapper-Prefix.pch"; sourceTree = "<group>"; };
 		D307A0F915EEABBF00C04F84 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		D307A0FA15EEABBF00C04F84 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		D307A0FC15EEABBF00C04F84 /* Shader.fsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; name = Shader.fsh; path = Shaders/Shader.fsh; sourceTree = "<group>"; };
@@ -65,7 +65,7 @@
 		D307A0D715EEABBF00C04F84 = {
 			isa = PBXGroup;
 			children = (
-				D307A0F015EEABBF00C04F84 /* GLTest4 */,
+				D307A0F015EEABBF00C04F84 /* ClippedMeshCapper */,
 				D307A0E515EEABBF00C04F84 /* Frameworks */,
 				D307A0E315EEABBF00C04F84 /* Products */,
 			);
@@ -74,7 +74,7 @@
 		D307A0E315EEABBF00C04F84 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				D307A0E215EEABBF00C04F84 /* GLTest4.app */,
+				D307A0E215EEABBF00C04F84 /* ClippedMeshCapper.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -91,7 +91,7 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		D307A0F015EEABBF00C04F84 /* GLTest4 */ = {
+		D307A0F015EEABBF00C04F84 /* ClippedMeshCapper */ = {
 			isa = PBXGroup;
 			children = (
 				D307A0F915EEABBF00C04F84 /* AppDelegate.h */,
@@ -106,16 +106,16 @@
 				D307A10615EEABBF00C04F84 /* ViewController_iPad.xib */,
 				D307A0F115EEABBF00C04F84 /* Supporting Files */,
 			);
-			path = GLTest4;
+			path = ClippedMeshCapper;
 			sourceTree = "<group>";
 		};
 		D307A0F115EEABBF00C04F84 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				D307A0F215EEABBF00C04F84 /* GLTest4-Info.plist */,
+				D307A0F215EEABBF00C04F84 /* ClippedMeshCapper-Info.plist */,
 				D307A0F315EEABBF00C04F84 /* InfoPlist.strings */,
 				D307A0F615EEABBF00C04F84 /* main.m */,
-				D307A0F815EEABBF00C04F84 /* GLTest4-Prefix.pch */,
+				D307A0F815EEABBF00C04F84 /* ClippedMeshCapper-Prefix.pch */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -123,9 +123,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		D307A0E115EEABBF00C04F84 /* GLTest4 */ = {
+		D307A0E115EEABBF00C04F84 /* ClippedMeshCapper */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = D307A10B15EEABBF00C04F84 /* Build configuration list for PBXNativeTarget "GLTest4" */;
+			buildConfigurationList = D307A10B15EEABBF00C04F84 /* Build configuration list for PBXNativeTarget "ClippedMeshCapper" */;
 			buildPhases = (
 				D307A0DE15EEABBF00C04F84 /* Sources */,
 				D307A0DF15EEABBF00C04F84 /* Frameworks */,
@@ -135,9 +135,9 @@
 			);
 			dependencies = (
 			);
-			name = GLTest4;
-			productName = GLTest4;
-			productReference = D307A0E215EEABBF00C04F84 /* GLTest4.app */;
+			name = ClippedMeshCapper;
+			productName = ClippedMeshCapper;
+			productReference = D307A0E215EEABBF00C04F84 /* ClippedMeshCapper.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -149,7 +149,7 @@
 				LastUpgradeCheck = 0430;
 				ORGANIZATIONNAME = "Huge Bonner Inc.";
 			};
-			buildConfigurationList = D307A0DC15EEABBF00C04F84 /* Build configuration list for PBXProject "GLTest4" */;
+			buildConfigurationList = D307A0DC15EEABBF00C04F84 /* Build configuration list for PBXProject "ClippedMeshCapper" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -161,7 +161,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				D307A0E115EEABBF00C04F84 /* GLTest4 */,
+				D307A0E115EEABBF00C04F84 /* ClippedMeshCapper */,
 			);
 		};
 /* End PBXProject section */
@@ -272,10 +272,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "GLTest4/GLTest4-Prefix.pch";
+				GCC_PREFIX_HEADER = "ClippedMeshCapper/ClippedMeshCapper-Prefix.pch";
 				"GCC_THUMB_SUPPORT[arch=armv6]" = "";
-				INFOPLIST_FILE = "GLTest4/GLTest4-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				INFOPLIST_FILE = "ClippedMeshCapper/ClippedMeshCapper-Info.plist";
+				PRODUCT_NAME = ClippedMeshCapper;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -284,10 +284,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "GLTest4/GLTest4-Prefix.pch";
+				GCC_PREFIX_HEADER = "ClippedMeshCapper/ClippedMeshCapper-Prefix.pch";
 				"GCC_THUMB_SUPPORT[arch=armv6]" = "";
-				INFOPLIST_FILE = "GLTest4/GLTest4-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				INFOPLIST_FILE = "ClippedMeshCapper/ClippedMeshCapper-Info.plist";
+				PRODUCT_NAME = ClippedMeshCapper;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
@@ -295,7 +295,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		D307A0DC15EEABBF00C04F84 /* Build configuration list for PBXProject "GLTest4" */ = {
+		D307A0DC15EEABBF00C04F84 /* Build configuration list for PBXProject "ClippedMeshCapper" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				D307A10915EEABBF00C04F84 /* Debug */,
@@ -304,7 +304,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		D307A10B15EEABBF00C04F84 /* Build configuration list for PBXNativeTarget "GLTest4" */ = {
+		D307A10B15EEABBF00C04F84 /* Build configuration list for PBXNativeTarget "ClippedMeshCapper" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				D307A10C15EEABBF00C04F84 /* Debug */,

@@ -1,5 +1,5 @@
 //
-// Prefix header for all source files of the 'GLTest4' target in the 'GLTest4' project
+// Prefix header for all source files of the 'ClippedMeshCapper' target in the 'ClippedMeshCapper' project
 //
 
 #import <Availability.h>
