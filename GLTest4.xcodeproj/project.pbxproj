@@ -21,12 +21,6 @@
 		D307A10515EEABBF00C04F84 /* ViewController_iPhone.xib in Resources */ = {isa = PBXBuildFile; fileRef = D307A10315EEABBF00C04F84 /* ViewController_iPhone.xib */; };
 		D307A10815EEABBF00C04F84 /* ViewController_iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = D307A10615EEABBF00C04F84 /* ViewController_iPad.xib */; };
 		D307A11015EEAD9E00C04F84 /* ClipPlane.m in Sources */ = {isa = PBXBuildFile; fileRef = D307A10F15EEAD9E00C04F84 /* ClipPlane.m */; };
-		D307A12015EEADBD00C04F84 /* VGgraphics.c in Sources */ = {isa = PBXBuildFile; fileRef = D307A11415EEADBD00C04F84 /* VGgraphics.c */; };
-		D307A12115EEADBD00C04F84 /* VGmarchingCubes.c in Sources */ = {isa = PBXBuildFile; fileRef = D307A11615EEADBD00C04F84 /* VGmarchingCubes.c */; };
-		D307A12215EEADBD00C04F84 /* VGMeshController.m in Sources */ = {isa = PBXBuildFile; fileRef = D307A11915EEADBD00C04F84 /* VGMeshController.m */; };
-		D307A12315EEADBD00C04F84 /* VGshape.c in Sources */ = {isa = PBXBuildFile; fileRef = D307A11A15EEADBD00C04F84 /* VGshape.c */; };
-		D307A12415EEADBD00C04F84 /* VGtrackball.c in Sources */ = {isa = PBXBuildFile; fileRef = D307A11C15EEADBD00C04F84 /* VGtrackball.c */; };
-		D307A12515EEADBD00C04F84 /* VGvec.c in Sources */ = {isa = PBXBuildFile; fileRef = D307A11E15EEADBD00C04F84 /* VGvec.c */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -50,20 +44,6 @@
 		D307A10715EEABBF00C04F84 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/ViewController_iPad.xib; sourceTree = "<group>"; };
 		D307A10E15EEAD9E00C04F84 /* ClipPlane.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ClipPlane.h; sourceTree = "<group>"; };
 		D307A10F15EEAD9E00C04F84 /* ClipPlane.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ClipPlane.m; sourceTree = "<group>"; };
-		D307A11215EEADBD00C04F84 /* LURenderer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LURenderer.h; sourceTree = "<group>"; };
-		D307A11315EEADBD00C04F84 /* VG_MACRO_graphics.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VG_MACRO_graphics.h; sourceTree = "<group>"; };
-		D307A11415EEADBD00C04F84 /* VGgraphics.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = VGgraphics.c; sourceTree = "<group>"; };
-		D307A11515EEADBD00C04F84 /* VGgraphics.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VGgraphics.h; sourceTree = "<group>"; };
-		D307A11615EEADBD00C04F84 /* VGmarchingCubes.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = VGmarchingCubes.c; sourceTree = "<group>"; };
-		D307A11715EEADBD00C04F84 /* VGmarchingCubes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VGmarchingCubes.h; sourceTree = "<group>"; };
-		D307A11815EEADBD00C04F84 /* VGMeshController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VGMeshController.h; sourceTree = "<group>"; };
-		D307A11915EEADBD00C04F84 /* VGMeshController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VGMeshController.m; sourceTree = "<group>"; };
-		D307A11A15EEADBD00C04F84 /* VGshape.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = VGshape.c; sourceTree = "<group>"; };
-		D307A11B15EEADBD00C04F84 /* VGshape.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VGshape.h; sourceTree = "<group>"; };
-		D307A11C15EEADBD00C04F84 /* VGtrackball.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = VGtrackball.c; sourceTree = "<group>"; };
-		D307A11D15EEADBD00C04F84 /* VGtrackball.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VGtrackball.h; sourceTree = "<group>"; };
-		D307A11E15EEADBD00C04F84 /* VGvec.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = VGvec.c; sourceTree = "<group>"; };
-		D307A11F15EEADBD00C04F84 /* VGvec.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VGvec.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,7 +82,6 @@
 		D307A0E515EEABBF00C04F84 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				D307A11115EEADBD00C04F84 /* Graphics */,
 				D307A0E615EEABBF00C04F84 /* UIKit.framework */,
 				D307A0E815EEABBF00C04F84 /* Foundation.framework */,
 				D307A0EA15EEABBF00C04F84 /* CoreGraphics.framework */,
@@ -139,28 +118,6 @@
 				D307A0F815EEABBF00C04F84 /* GLTest4-Prefix.pch */,
 			);
 			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		D307A11115EEADBD00C04F84 /* Graphics */ = {
-			isa = PBXGroup;
-			children = (
-				D307A11215EEADBD00C04F84 /* LURenderer.h */,
-				D307A11315EEADBD00C04F84 /* VG_MACRO_graphics.h */,
-				D307A11415EEADBD00C04F84 /* VGgraphics.c */,
-				D307A11515EEADBD00C04F84 /* VGgraphics.h */,
-				D307A11615EEADBD00C04F84 /* VGmarchingCubes.c */,
-				D307A11715EEADBD00C04F84 /* VGmarchingCubes.h */,
-				D307A11815EEADBD00C04F84 /* VGMeshController.h */,
-				D307A11915EEADBD00C04F84 /* VGMeshController.m */,
-				D307A11A15EEADBD00C04F84 /* VGshape.c */,
-				D307A11B15EEADBD00C04F84 /* VGshape.h */,
-				D307A11C15EEADBD00C04F84 /* VGtrackball.c */,
-				D307A11D15EEADBD00C04F84 /* VGtrackball.h */,
-				D307A11E15EEADBD00C04F84 /* VGvec.c */,
-				D307A11F15EEADBD00C04F84 /* VGvec.h */,
-			);
-			name = Graphics;
-			path = ../PresenterUltrasound/Frameworks/LindsayUtility/Graphics;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -233,12 +190,6 @@
 				D307A0FB15EEABBF00C04F84 /* AppDelegate.m in Sources */,
 				D307A10215EEABBF00C04F84 /* ViewController.m in Sources */,
 				D307A11015EEAD9E00C04F84 /* ClipPlane.m in Sources */,
-				D307A12015EEADBD00C04F84 /* VGgraphics.c in Sources */,
-				D307A12115EEADBD00C04F84 /* VGmarchingCubes.c in Sources */,
-				D307A12215EEADBD00C04F84 /* VGMeshController.m in Sources */,
-				D307A12315EEADBD00C04F84 /* VGshape.c in Sources */,
-				D307A12415EEADBD00C04F84 /* VGtrackball.c in Sources */,
-				D307A12515EEADBD00C04F84 /* VGvec.c in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -360,6 +311,7 @@
 				D307A10D15EEABBF00C04F84 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

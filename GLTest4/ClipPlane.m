@@ -7,7 +7,7 @@
 //
 
 #import "ClipPlane.h"
-#import "VGvec.h"
+#import <GLKit/GLKit.h>
 
 @implementation ClipPlane
 
@@ -27,30 +27,9 @@
     return self;
 }
 
-// This method would more properly live in Interface, but there seem to be some difficulties
-// that arise due to needed conversions between VG3 (used by Interface) and VGvec3 (used by
-// this class). As a result, I leave the method here.
-/*- (void) calculateLoadedPartsBoundingBoxMidpoint:(float[3])bbmid {
- float bbmin[3];
- float bbmax[3];
- [self.interface bbcalcMin:bbmin max:bbmax];
- 
- // Find midpoint of bounding box.
- for(uint8_t i = 0; i < 3; i++) {
- bbmid[i] = (bbmin[i] + bbmax[i]) / 2;
- }
- 
- bbmid[1] += self.planeYOffset;
- interface.viewXRot = 90.0;
- }*/
-
 - (void) recalculateCoefficients {
-    VGvec3 bbmid;
-    bbmid[0] = 0;
-    bbmid[1] = 0;
-    bbmid[2] = 0;
-    //[self calculateLoadedPartsBoundingBoxMidpoint:bbmid];
-    VGvec3 normal = {normalX, normalY, normalZ};
+    GLKVector3 bbmid = GLKVector3Make(0, 0, 0);
+    GLKVector3 normal = GLKVector3Make(normalX, normalY, normalZ);
     
     // The standard plane equation is Ax + By + Cz + d = 0, where A, B, C, and d
     // are real numbers. Such a plane has the normal [A B C] and is at distance d
@@ -84,16 +63,17 @@
     self.planeX = normalX;
     self.planeY = normalY;
     self.planeZ = normalZ;
-    self.planeW = -VGvec3dot(normal, bbmid);
+    self.planeW = -GLKVector3DotProduct(normal, bbmid);
 }
 
-- (void) rotate:(float)angle {
-    VGvec3 normal = {normalX, normalY, normalZ};
-    VGvec3 rotationAxis = {1, 0, 0};
-    VGvec3srot(normal, rotationAxis, angle);
-    normalX = normal[0];
-    normalY = normal[1];
-    normalZ = normal[2];
+- (void) rotate:(float)angle {    
+    GLKVector3 normal = GLKVector3Make(normalX, normalY, normalZ);
+    GLKVector3 rotationAxis = GLKVector3Make(1, 0, 0);
+    GLKMatrix4 rotationMatrix = GLKMatrix4RotateWithVector3(GLKMatrix4Identity, angle, rotationAxis);
+    normal = GLKMatrix4MultiplyVector3(rotationMatrix, normal);
+    normalX = normal.x;
+    normalY = normal.y;
+    normalZ = normal.z;
     
     [self recalculateCoefficients];
 }
