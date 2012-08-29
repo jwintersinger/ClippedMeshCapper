@@ -16,6 +16,7 @@ enum
     UNIFORM_MODELVIEWPROJECTION_MATRIX,
     UNIFORM_NORMAL_MATRIX,
     UNIFORM_CLIP_PLANE,
+    UNIFORM_CLIPPING_ENABLED,
     NUM_UNIFORMS
 };
 GLint uniforms[NUM_UNIFORMS];
@@ -132,6 +133,7 @@ GLfloat gPlaneVertexData[] = {
     GLKView *view = (GLKView *)self.view;
     view.context = self.context;
     view.drawableDepthFormat = GLKViewDrawableDepthFormat24;
+    view.drawableStencilFormat = GLKViewDrawableStencilFormat8;
     
     [self setupGL];
 }
@@ -234,23 +236,76 @@ GLfloat gPlaneVertexData[] = {
     _rotation += self.timeSinceLastUpdate * 0.5f;
 }
 
+- (void) drawCube {
+    char* baseAddr = (char*)gCubeVertexData;
+    glVertexAttribPointer(GLKVertexAttribPosition, 3, GL_FLOAT, GL_FALSE, 24, baseAddr);
+    glVertexAttribPointer(GLKVertexAttribNormal, 3, GL_FLOAT, GL_FALSE, 24, baseAddr + 12);
+    glDrawArrays(GL_TRIANGLES, 0, 36);
+}
+
+- (void) drawPlane {
+    char* baseAddr = (char*)gPlaneVertexData;
+    glVertexAttribPointer(GLKVertexAttribPosition, 3, GL_FLOAT, GL_FALSE, 24, baseAddr);
+    glVertexAttribPointer(GLKVertexAttribNormal, 3, GL_FLOAT, GL_FALSE, 24, baseAddr + 12);
+    glDrawArrays(GL_TRIANGLES, 0, 6);
+}
+
 - (void)glkView:(GLKView *)view drawInRect:(CGRect)rect
 {
-    glClearColor(0.65f, 0.65f, 0.65f, 1.0f);
-    glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
     glUniform4f(uniforms[UNIFORM_CLIP_PLANE],
                 self.clipPlane.planeX, self.clipPlane.planeY,
                 self.clipPlane.planeZ, self.clipPlane.planeW);
+    glUniform1i(uniforms[UNIFORM_CLIPPING_ENABLED], GL_FALSE);
     
     //glBindVertexArrayOES(_vertexArray);
-    
-    // Render the object again with ES2
     glUseProgram(_program);
     
     glUniformMatrix4fv(uniforms[UNIFORM_MODELVIEWPROJECTION_MATRIX], 1, 0, _modelViewProjectionMatrix.m);
     glUniformMatrix3fv(uniforms[UNIFORM_NORMAL_MATRIX], 1, 0, _normalMatrix.m);
     
-    glDrawArrays(GL_TRIANGLES, 0, 36);
+    // Clear colour, depth, and stencil buffers.
+    glClearColor(0.65f, 0.65f, 0.65f, 1.0f);
+    glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT | GL_STENCIL_BUFFER_BIT);
+    
+    // Enable depth buffer writes, disable colour buffer writes, draw plane into depth buffer.
+    glEnable(GL_DEPTH_TEST);
+    glColorMask(GL_FALSE, GL_FALSE, GL_FALSE, GL_FALSE);
+    [self drawPlane];
+    
+    // 1. Disable depth buffer writes, meaning only stencil buffer will be modified.
+    // 2. Draw only front faces of object, incrementing stencil buffer where depth test passes.
+    // 3. Draw only back faces of object, decrementing stencil buffer where depth test passes.
+    // Result:
+    //   stencil_buffer = 1 where plane lies between front and back faces of object
+    //   stencil_buffer = 0 elsewhere
+    glDepthMask(GL_FALSE);
+    glEnable(GL_CULL_FACE);
+    glEnable(GL_STENCIL_TEST);
+    glStencilFunc(GL_ALWAYS, 0, ~0);
+    // Draw front faces.
+    glStencilOp(GL_KEEP, GL_KEEP, GL_INCR);
+    glCullFace(GL_BACK);
+    [self drawCube];
+    // Draw back faces.
+    glStencilOp(GL_KEEP, GL_KEEP, GL_DECR);
+    glCullFace(GL_FRONT);
+    [self drawCube];
+    glDisable(GL_CULL_FACE);
+    
+    // Clear depth buffer and enable writes to depth and colour buffers.
+    glDepthMask(GL_TRUE);
+    glClear(GL_DEPTH_BUFFER_BIT);
+    glColorMask(GL_TRUE, GL_TRUE, GL_TRUE, GL_TRUE);
+    
+    // Draw plane into colour buffer where stencil_buffer != 0.
+    glStencilFunc(GL_NOTEQUAL, 0, ~0);
+    [self drawPlane];
+    glDisable(GL_STENCIL_TEST);
+    
+    // Draw object into colour buffer with clip plane applied in shader.
+    glEnable(GL_DEPTH_TEST);
+    glUniform1i(uniforms[UNIFORM_CLIPPING_ENABLED], GL_TRUE);
+    [self drawCube];
 }
 
 #pragma mark -  OpenGL ES 2 shader compilation
@@ -312,6 +367,7 @@ GLfloat gPlaneVertexData[] = {
     uniforms[UNIFORM_MODELVIEWPROJECTION_MATRIX] = glGetUniformLocation(_program, "modelViewProjectionMatrix");
     uniforms[UNIFORM_NORMAL_MATRIX] = glGetUniformLocation(_program, "normalMatrix");
     uniforms[UNIFORM_CLIP_PLANE] = glGetUniformLocation(_program, "u_clipPlane");
+    uniforms[UNIFORM_CLIPPING_ENABLED] = glGetUniformLocation(_program, "u_clippingEnabled");
     
     // Release vertex and fragment shaders.
     if (vertShader) {
