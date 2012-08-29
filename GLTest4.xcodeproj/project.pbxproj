@@ -1,0 +1,367 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		D307A0E715EEABBF00C04F84 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D307A0E615EEABBF00C04F84 /* UIKit.framework */; };
+		D307A0E915EEABBF00C04F84 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D307A0E815EEABBF00C04F84 /* Foundation.framework */; };
+		D307A0EB15EEABBF00C04F84 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D307A0EA15EEABBF00C04F84 /* CoreGraphics.framework */; };
+		D307A0ED15EEABBF00C04F84 /* GLKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D307A0EC15EEABBF00C04F84 /* GLKit.framework */; };
+		D307A0EF15EEABBF00C04F84 /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D307A0EE15EEABBF00C04F84 /* OpenGLES.framework */; };
+		D307A0F515EEABBF00C04F84 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = D307A0F315EEABBF00C04F84 /* InfoPlist.strings */; };
+		D307A0F715EEABBF00C04F84 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D307A0F615EEABBF00C04F84 /* main.m */; };
+		D307A0FB15EEABBF00C04F84 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D307A0FA15EEABBF00C04F84 /* AppDelegate.m */; };
+		D307A0FD15EEABBF00C04F84 /* Shader.fsh in Resources */ = {isa = PBXBuildFile; fileRef = D307A0FC15EEABBF00C04F84 /* Shader.fsh */; };
+		D307A0FF15EEABBF00C04F84 /* Shader.vsh in Resources */ = {isa = PBXBuildFile; fileRef = D307A0FE15EEABBF00C04F84 /* Shader.vsh */; };
+		D307A10215EEABBF00C04F84 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D307A10115EEABBF00C04F84 /* ViewController.m */; };
+		D307A10515EEABBF00C04F84 /* ViewController_iPhone.xib in Resources */ = {isa = PBXBuildFile; fileRef = D307A10315EEABBF00C04F84 /* ViewController_iPhone.xib */; };
+		D307A10815EEABBF00C04F84 /* ViewController_iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = D307A10615EEABBF00C04F84 /* ViewController_iPad.xib */; };
+		D307A11015EEAD9E00C04F84 /* ClipPlane.m in Sources */ = {isa = PBXBuildFile; fileRef = D307A10F15EEAD9E00C04F84 /* ClipPlane.m */; };
+		D307A12015EEADBD00C04F84 /* VGgraphics.c in Sources */ = {isa = PBXBuildFile; fileRef = D307A11415EEADBD00C04F84 /* VGgraphics.c */; };
+		D307A12115EEADBD00C04F84 /* VGmarchingCubes.c in Sources */ = {isa = PBXBuildFile; fileRef = D307A11615EEADBD00C04F84 /* VGmarchingCubes.c */; };
+		D307A12215EEADBD00C04F84 /* VGMeshController.m in Sources */ = {isa = PBXBuildFile; fileRef = D307A11915EEADBD00C04F84 /* VGMeshController.m */; };
+		D307A12315EEADBD00C04F84 /* VGshape.c in Sources */ = {isa = PBXBuildFile; fileRef = D307A11A15EEADBD00C04F84 /* VGshape.c */; };
+		D307A12415EEADBD00C04F84 /* VGtrackball.c in Sources */ = {isa = PBXBuildFile; fileRef = D307A11C15EEADBD00C04F84 /* VGtrackball.c */; };
+		D307A12515EEADBD00C04F84 /* VGvec.c in Sources */ = {isa = PBXBuildFile; fileRef = D307A11E15EEADBD00C04F84 /* VGvec.c */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		D307A0E215EEABBF00C04F84 /* GLTest4.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GLTest4.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D307A0E615EEABBF00C04F84 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		D307A0E815EEABBF00C04F84 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		D307A0EA15EEABBF00C04F84 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		D307A0EC15EEABBF00C04F84 /* GLKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GLKit.framework; path = System/Library/Frameworks/GLKit.framework; sourceTree = SDKROOT; };
+		D307A0EE15EEABBF00C04F84 /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
+		D307A0F215EEABBF00C04F84 /* GLTest4-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "GLTest4-Info.plist"; sourceTree = "<group>"; };
+		D307A0F415EEABBF00C04F84 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		D307A0F615EEABBF00C04F84 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		D307A0F815EEABBF00C04F84 /* GLTest4-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "GLTest4-Prefix.pch"; sourceTree = "<group>"; };
+		D307A0F915EEABBF00C04F84 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		D307A0FA15EEABBF00C04F84 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		D307A0FC15EEABBF00C04F84 /* Shader.fsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; name = Shader.fsh; path = Shaders/Shader.fsh; sourceTree = "<group>"; };
+		D307A0FE15EEABBF00C04F84 /* Shader.vsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; name = Shader.vsh; path = Shaders/Shader.vsh; sourceTree = "<group>"; };
+		D307A10015EEABBF00C04F84 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		D307A10115EEABBF00C04F84 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		D307A10415EEABBF00C04F84 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/ViewController_iPhone.xib; sourceTree = "<group>"; };
+		D307A10715EEABBF00C04F84 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/ViewController_iPad.xib; sourceTree = "<group>"; };
+		D307A10E15EEAD9E00C04F84 /* ClipPlane.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ClipPlane.h; sourceTree = "<group>"; };
+		D307A10F15EEAD9E00C04F84 /* ClipPlane.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ClipPlane.m; sourceTree = "<group>"; };
+		D307A11215EEADBD00C04F84 /* LURenderer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LURenderer.h; sourceTree = "<group>"; };
+		D307A11315EEADBD00C04F84 /* VG_MACRO_graphics.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VG_MACRO_graphics.h; sourceTree = "<group>"; };
+		D307A11415EEADBD00C04F84 /* VGgraphics.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = VGgraphics.c; sourceTree = "<group>"; };
+		D307A11515EEADBD00C04F84 /* VGgraphics.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VGgraphics.h; sourceTree = "<group>"; };
+		D307A11615EEADBD00C04F84 /* VGmarchingCubes.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = VGmarchingCubes.c; sourceTree = "<group>"; };
+		D307A11715EEADBD00C04F84 /* VGmarchingCubes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VGmarchingCubes.h; sourceTree = "<group>"; };
+		D307A11815EEADBD00C04F84 /* VGMeshController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VGMeshController.h; sourceTree = "<group>"; };
+		D307A11915EEADBD00C04F84 /* VGMeshController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VGMeshController.m; sourceTree = "<group>"; };
+		D307A11A15EEADBD00C04F84 /* VGshape.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = VGshape.c; sourceTree = "<group>"; };
+		D307A11B15EEADBD00C04F84 /* VGshape.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VGshape.h; sourceTree = "<group>"; };
+		D307A11C15EEADBD00C04F84 /* VGtrackball.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = VGtrackball.c; sourceTree = "<group>"; };
+		D307A11D15EEADBD00C04F84 /* VGtrackball.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VGtrackball.h; sourceTree = "<group>"; };
+		D307A11E15EEADBD00C04F84 /* VGvec.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = VGvec.c; sourceTree = "<group>"; };
+		D307A11F15EEADBD00C04F84 /* VGvec.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VGvec.h; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D307A0DF15EEABBF00C04F84 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D307A0E715EEABBF00C04F84 /* UIKit.framework in Frameworks */,
+				D307A0E915EEABBF00C04F84 /* Foundation.framework in Frameworks */,
+				D307A0EB15EEABBF00C04F84 /* CoreGraphics.framework in Frameworks */,
+				D307A0ED15EEABBF00C04F84 /* GLKit.framework in Frameworks */,
+				D307A0EF15EEABBF00C04F84 /* OpenGLES.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		D307A0D715EEABBF00C04F84 = {
+			isa = PBXGroup;
+			children = (
+				D307A0F015EEABBF00C04F84 /* GLTest4 */,
+				D307A0E515EEABBF00C04F84 /* Frameworks */,
+				D307A0E315EEABBF00C04F84 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		D307A0E315EEABBF00C04F84 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D307A0E215EEABBF00C04F84 /* GLTest4.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D307A0E515EEABBF00C04F84 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D307A11115EEADBD00C04F84 /* Graphics */,
+				D307A0E615EEABBF00C04F84 /* UIKit.framework */,
+				D307A0E815EEABBF00C04F84 /* Foundation.framework */,
+				D307A0EA15EEABBF00C04F84 /* CoreGraphics.framework */,
+				D307A0EC15EEABBF00C04F84 /* GLKit.framework */,
+				D307A0EE15EEABBF00C04F84 /* OpenGLES.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D307A0F015EEABBF00C04F84 /* GLTest4 */ = {
+			isa = PBXGroup;
+			children = (
+				D307A0F915EEABBF00C04F84 /* AppDelegate.h */,
+				D307A0FA15EEABBF00C04F84 /* AppDelegate.m */,
+				D307A0FC15EEABBF00C04F84 /* Shader.fsh */,
+				D307A0FE15EEABBF00C04F84 /* Shader.vsh */,
+				D307A10E15EEAD9E00C04F84 /* ClipPlane.h */,
+				D307A10F15EEAD9E00C04F84 /* ClipPlane.m */,
+				D307A10015EEABBF00C04F84 /* ViewController.h */,
+				D307A10115EEABBF00C04F84 /* ViewController.m */,
+				D307A10315EEABBF00C04F84 /* ViewController_iPhone.xib */,
+				D307A10615EEABBF00C04F84 /* ViewController_iPad.xib */,
+				D307A0F115EEABBF00C04F84 /* Supporting Files */,
+			);
+			path = GLTest4;
+			sourceTree = "<group>";
+		};
+		D307A0F115EEABBF00C04F84 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				D307A0F215EEABBF00C04F84 /* GLTest4-Info.plist */,
+				D307A0F315EEABBF00C04F84 /* InfoPlist.strings */,
+				D307A0F615EEABBF00C04F84 /* main.m */,
+				D307A0F815EEABBF00C04F84 /* GLTest4-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		D307A11115EEADBD00C04F84 /* Graphics */ = {
+			isa = PBXGroup;
+			children = (
+				D307A11215EEADBD00C04F84 /* LURenderer.h */,
+				D307A11315EEADBD00C04F84 /* VG_MACRO_graphics.h */,
+				D307A11415EEADBD00C04F84 /* VGgraphics.c */,
+				D307A11515EEADBD00C04F84 /* VGgraphics.h */,
+				D307A11615EEADBD00C04F84 /* VGmarchingCubes.c */,
+				D307A11715EEADBD00C04F84 /* VGmarchingCubes.h */,
+				D307A11815EEADBD00C04F84 /* VGMeshController.h */,
+				D307A11915EEADBD00C04F84 /* VGMeshController.m */,
+				D307A11A15EEADBD00C04F84 /* VGshape.c */,
+				D307A11B15EEADBD00C04F84 /* VGshape.h */,
+				D307A11C15EEADBD00C04F84 /* VGtrackball.c */,
+				D307A11D15EEADBD00C04F84 /* VGtrackball.h */,
+				D307A11E15EEADBD00C04F84 /* VGvec.c */,
+				D307A11F15EEADBD00C04F84 /* VGvec.h */,
+			);
+			name = Graphics;
+			path = ../PresenterUltrasound/Frameworks/LindsayUtility/Graphics;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D307A0E115EEABBF00C04F84 /* GLTest4 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D307A10B15EEABBF00C04F84 /* Build configuration list for PBXNativeTarget "GLTest4" */;
+			buildPhases = (
+				D307A0DE15EEABBF00C04F84 /* Sources */,
+				D307A0DF15EEABBF00C04F84 /* Frameworks */,
+				D307A0E015EEABBF00C04F84 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = GLTest4;
+			productName = GLTest4;
+			productReference = D307A0E215EEABBF00C04F84 /* GLTest4.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D307A0D915EEABBF00C04F84 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0430;
+				ORGANIZATIONNAME = "Huge Bonner Inc.";
+			};
+			buildConfigurationList = D307A0DC15EEABBF00C04F84 /* Build configuration list for PBXProject "GLTest4" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = D307A0D715EEABBF00C04F84;
+			productRefGroup = D307A0E315EEABBF00C04F84 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D307A0E115EEABBF00C04F84 /* GLTest4 */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D307A0E015EEABBF00C04F84 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D307A0F515EEABBF00C04F84 /* InfoPlist.strings in Resources */,
+				D307A0FD15EEABBF00C04F84 /* Shader.fsh in Resources */,
+				D307A0FF15EEABBF00C04F84 /* Shader.vsh in Resources */,
+				D307A10515EEABBF00C04F84 /* ViewController_iPhone.xib in Resources */,
+				D307A10815EEABBF00C04F84 /* ViewController_iPad.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D307A0DE15EEABBF00C04F84 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D307A0F715EEABBF00C04F84 /* main.m in Sources */,
+				D307A0FB15EEABBF00C04F84 /* AppDelegate.m in Sources */,
+				D307A10215EEABBF00C04F84 /* ViewController.m in Sources */,
+				D307A11015EEAD9E00C04F84 /* ClipPlane.m in Sources */,
+				D307A12015EEADBD00C04F84 /* VGgraphics.c in Sources */,
+				D307A12115EEADBD00C04F84 /* VGmarchingCubes.c in Sources */,
+				D307A12215EEADBD00C04F84 /* VGMeshController.m in Sources */,
+				D307A12315EEADBD00C04F84 /* VGshape.c in Sources */,
+				D307A12415EEADBD00C04F84 /* VGtrackball.c in Sources */,
+				D307A12515EEADBD00C04F84 /* VGvec.c in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		D307A0F315EEABBF00C04F84 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D307A0F415EEABBF00C04F84 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		D307A10315EEABBF00C04F84 /* ViewController_iPhone.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D307A10415EEABBF00C04F84 /* en */,
+			);
+			name = ViewController_iPhone.xib;
+			sourceTree = "<group>";
+		};
+		D307A10615EEABBF00C04F84 /* ViewController_iPad.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D307A10715EEABBF00C04F84 /* en */,
+			);
+			name = ViewController_iPad.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		D307A10915EEABBF00C04F84 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		D307A10A15EEABBF00C04F84 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		D307A10C15EEABBF00C04F84 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "GLTest4/GLTest4-Prefix.pch";
+				"GCC_THUMB_SUPPORT[arch=armv6]" = "";
+				INFOPLIST_FILE = "GLTest4/GLTest4-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		D307A10D15EEABBF00C04F84 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "GLTest4/GLTest4-Prefix.pch";
+				"GCC_THUMB_SUPPORT[arch=armv6]" = "";
+				INFOPLIST_FILE = "GLTest4/GLTest4-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D307A0DC15EEABBF00C04F84 /* Build configuration list for PBXProject "GLTest4" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D307A10915EEABBF00C04F84 /* Debug */,
+				D307A10A15EEABBF00C04F84 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D307A10B15EEABBF00C04F84 /* Build configuration list for PBXNativeTarget "GLTest4" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D307A10C15EEABBF00C04F84 /* Debug */,
+				D307A10D15EEABBF00C04F84 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D307A0D915EEABBF00C04F84 /* Project object */;
+}
