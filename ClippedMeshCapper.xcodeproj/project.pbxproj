@@ -21,6 +21,7 @@
 		D307A10515EEABBF00C04F84 /* ViewController_iPhone.xib in Resources */ = {isa = PBXBuildFile; fileRef = D307A10315EEABBF00C04F84 /* ViewController_iPhone.xib */; };
 		D307A10815EEABBF00C04F84 /* ViewController_iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = D307A10615EEABBF00C04F84 /* ViewController_iPad.xib */; };
 		D307A11015EEAD9E00C04F84 /* ClipPlane.m in Sources */ = {isa = PBXBuildFile; fileRef = D307A10F15EEAD9E00C04F84 /* ClipPlane.m */; };
+		D353EACA15EEE3E70028F8A2 /* technique.png in Resources */ = {isa = PBXBuildFile; fileRef = D353EAC915EEE3E70028F8A2 /* technique.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,10 +31,10 @@
 		D307A0EA15EEABBF00C04F84 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		D307A0EC15EEABBF00C04F84 /* GLKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GLKit.framework; path = System/Library/Frameworks/GLKit.framework; sourceTree = SDKROOT; };
 		D307A0EE15EEABBF00C04F84 /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
-		D307A0F215EEABBF00C04F84 /* ClippedMeshCapper-Info.plist */ = {isa = PBXFileReference; path = "ClippedMeshCapper-Info.plist"; sourceTree = "<group>"; };
+		D307A0F215EEABBF00C04F84 /* ClippedMeshCapper-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "ClippedMeshCapper-Info.plist"; sourceTree = "<group>"; };
 		D307A0F415EEABBF00C04F84 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		D307A0F615EEABBF00C04F84 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		D307A0F815EEABBF00C04F84 /* ClippedMeshCapper-Prefix.pch */ = {isa = PBXFileReference; path = "ClippedMeshCapper-Prefix.pch"; sourceTree = "<group>"; };
+		D307A0F815EEABBF00C04F84 /* ClippedMeshCapper-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ClippedMeshCapper-Prefix.pch"; sourceTree = "<group>"; };
 		D307A0F915EEABBF00C04F84 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		D307A0FA15EEABBF00C04F84 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		D307A0FC15EEABBF00C04F84 /* Shader.fsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; name = Shader.fsh; path = Shaders/Shader.fsh; sourceTree = "<group>"; };
@@ -44,6 +45,7 @@
 		D307A10715EEABBF00C04F84 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/ViewController_iPad.xib; sourceTree = "<group>"; };
 		D307A10E15EEAD9E00C04F84 /* ClipPlane.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ClipPlane.h; sourceTree = "<group>"; };
 		D307A10F15EEAD9E00C04F84 /* ClipPlane.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ClipPlane.m; sourceTree = "<group>"; };
+		D353EAC915EEE3E70028F8A2 /* technique.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = technique.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,6 +70,7 @@
 				D307A0F015EEABBF00C04F84 /* ClippedMeshCapper */,
 				D307A0E515EEABBF00C04F84 /* Frameworks */,
 				D307A0E315EEABBF00C04F84 /* Products */,
+				D353EAC915EEE3E70028F8A2 /* technique.png */,
 			);
 			sourceTree = "<group>";
 		};
@@ -176,6 +179,7 @@
 				D307A0FF15EEABBF00C04F84 /* Shader.vsh in Resources */,
 				D307A10515EEABBF00C04F84 /* ViewController_iPhone.xib in Resources */,
 				D307A10815EEABBF00C04F84 /* ViewController_iPad.xib in Resources */,
+				D353EACA15EEE3E70028F8A2 /* technique.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
