@@ -92,8 +92,8 @@ GLfloat gPlaneVertexData[] = {
     GLKMatrix3 _normalMatrix;
     float _rotation;
     
-    GLuint _vertexArray;
-    GLuint _vertexBuffer;
+    //GLuint _vertexArray;
+    //GLuint _vertexBuffer;
 }
 @property (strong, nonatomic) EAGLContext *context;
 
@@ -242,7 +242,7 @@ GLfloat gPlaneVertexData[] = {
                 self.clipPlane.planeX, self.clipPlane.planeY,
                 self.clipPlane.planeZ, self.clipPlane.planeW);
     
-    glBindVertexArrayOES(_vertexArray);
+    //glBindVertexArrayOES(_vertexArray);
     
     // Render the object again with ES2
     glUseProgram(_program);
