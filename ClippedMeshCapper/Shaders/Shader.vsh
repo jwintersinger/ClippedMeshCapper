@@ -15,6 +15,7 @@ uniform mat4 modelViewProjectionMatrix;
 uniform mat3 normalMatrix;
 
 uniform vec4 u_clipPlane;
+uniform bool u_clippingEnabled;
 varying float v_clipDist;
 
 void main()
