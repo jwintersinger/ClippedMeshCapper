@@ -48,7 +48,7 @@
     VGvec3 bbmid;
     bbmid[0] = 0;
     bbmid[1] = 0;
-    bbmid[2] = 2;
+    bbmid[2] = 0;
     //[self calculateLoadedPartsBoundingBoxMidpoint:bbmid];
     VGvec3 normal = {normalX, normalY, normalZ};
     

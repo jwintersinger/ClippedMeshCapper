@@ -28,5 +28,5 @@ void main()
     colorVarying = diffuseColor * nDotVP;
     
     gl_Position = modelViewProjectionMatrix * position;
-    v_clipDist = dot(gl_Position.xyz, u_clipPlane.xyz) + u_clipPlane.w;
+    v_clipDist = dot(position.xyz, u_clipPlane.xyz) + u_clipPlane.w;
 }
